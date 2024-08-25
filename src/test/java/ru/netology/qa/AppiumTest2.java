@@ -6,6 +6,8 @@ import io.appium.java_client.android.AndroidDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AppiumTest2 {
 
     private AndroidDriver driver;
-    private WebDriverWait wait;
+   // private WebDriverWait wait;
 
     private URL getUrl() {
         try {
@@ -49,11 +51,12 @@ public class AppiumTest2 {
 
     @Test
     public void sampleTwoTest() {
-        wait = new WebDriverWait(driver, 10);
+       // wait = new WebDriverWait(driver, 10);
         MobileElement el1 = (MobileElement) driver.findElement(By.id("ru.netology.testing.uiautomator:id/userInput"));
         el1.sendKeys("Rodina");
         MobileElement el2 = (MobileElement) driver.findElement(By.id("ru.netology.testing.uiautomator:id/buttonActivity"));
         el2.click();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         MobileElement el3 = (MobileElement) driver.findElement(By.id("ru.netology.testing.uiautomator:id/text"));
         el3.isDisplayed();
 

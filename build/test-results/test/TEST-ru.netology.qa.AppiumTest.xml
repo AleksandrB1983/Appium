@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.qa.AppiumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-24T08:10:03" hostname="DESKTOP-IVV0QSI" time="9.475">
-  <properties/>
-  <testcase name="SampleOneTest()" classname="ru.netology.qa.AppiumTest" time="9.475"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[авг. 24, 2024 3:10:09 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-]]></system-err>
-</testsuite>
